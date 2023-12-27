@@ -19,7 +19,7 @@ redirect_from:
 
 Hello, welcome to **Yu Wang**'s homepage. I am a junior student of [USTC(University of Science and Technology of China)](https://en.ustc.edu.cn/), majoring in **CS(computer science)** now. My Chinese name is **王昱** while my English name is **Terence**, so you can call me **Terence Wang**.
 
-My research interest includes Recommendation and LLM4Rec. But actually, I haven't figured out what I am passionate about(Hope to find it one day).
+My research interest includes *Recommendation* and *LLM4Rec*. But actually, I haven't figured out what I am passionate about(Hope to find it one day).
 
 # 💻 Experience
 

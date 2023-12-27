@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Yu Wang(Terence Wang)"
-  avatar           : "images/pic2.jpg"
+  avatar           : "images/android-chrome-192x192.png"
   bio              : "A student in University of Science and Technology of China, majoring in Computer Science now."
   location         : "Hefei, China"
   employer         :
@@ -48,14 +48,14 @@ author:
   orcid            : # e.g., "https://orcid.org/xxxx"
   pinterest        :
   soundcloud       :
-  stackoverflow    : https://stackoverflow.com/users/21208116/wloner0809
+  # stackoverflow    : https://stackoverflow.com/users/21208116
   steam            : 
   tumblr           :
   twitter          : 
   vine             :
-  weibo            :
+  weibo            : 
   xing             :
-  youtube          :
+  youtube          : 
   wikipedia        :
 
 
