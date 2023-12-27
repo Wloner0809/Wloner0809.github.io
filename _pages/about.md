@@ -21,10 +21,17 @@ Hello, welcome to **Yu Wang**'s homepage. I am a junior student of [USTC(Univers
 
 My research interest includes *Recommendation* and *LLM4Rec*. But actually, I haven't figured out what I am passionate about(Hope to find it one day).
 
-# 💻 Experience
+# 💻 Research Experience
 
 - *2023.03~Now*: Undergraduate Intern of [LDS](https://data-science.ustc.edu.cn/_upload/tpl/12/e9/4841/template4841/index.html) lead by [Xiangnan HE](https://hexiangnan.github.io/).
   - During this internship, I focus myself on *LLM4Rec*. I have read tens of papers relevant to *LLM4Rec*, and reproduced several papers with codes. What's more, I am doing some research on an *idea* now.
+
+# :teacher: Teaching Experience
+
+- *2023.09~2024.01*: Teaching Assistant for C language course
+  - help freshmen master how to program with C language and teach them some basic data structures such as array, list and so on.![](pic.png)
+<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">recitation lecture note</center> 
+
 
 # 🎖 Honors and Awards
 
@@ -32,7 +39,7 @@ My research interest includes *Recommendation* and *LLM4Rec*. But actually, I ha
 - *2022*: Yang Yongman Scholarship, HuaXia Computer Science Talent Class Scholarship
 - *2021*: Outstanding Freshman Scholarship Grade 3.
 
-# 📖 Educations
+# 📖 Education
 
 - *2021.09~2025.06(expected)*, Bachelor in Computer Science in USTC. GPA/Percentage: 3.90/5.2%.
 
