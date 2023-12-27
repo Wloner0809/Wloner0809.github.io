@@ -15,22 +15,26 @@ redirect_from:
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %} -->
 
-<span class='anchor' id='about-me'></span>
+<!-- <span class='anchor' id='about-me'></span> -->
 
+# 🐑 About Me
 Hello, welcome to **Yu Wang**'s homepage. I am a junior student of [USTC(University of Science and Technology of China)](https://en.ustc.edu.cn/), majoring in **CS(computer science)** now. My Chinese name is **王昱** while my English name is **Terence**, so you can call me **Terence Wang**.
 
-My research interest includes *Recommendation* and *LLM4Rec*. But actually, I haven't figured out what I am passionate about(Hope to find it one day).
+My research interests include *Recommendation*, *NLP* and *LLM4Rec*. But actually, I haven't figured out what I am passionate about(Hope to find it one day).
 
 # 💻 Research Experience
 
 - *2023.03~Now*: Undergraduate Intern of [LDS](https://data-science.ustc.edu.cn/_upload/tpl/12/e9/4841/template4841/index.html) lead by [Xiangnan HE](https://hexiangnan.github.io/).
   - During this internship, I focus myself on *LLM4Rec*. I have read tens of papers relevant to *LLM4Rec*, and reproduced several papers with codes. What's more, I am doing some research on an *idea* now.
 
-# :teacher: Teaching Experience
+# 🧑‍🏫 Teaching Experience
 
 - *2023.09~2024.01*: Teaching Assistant for C language course
-  - help freshmen master how to program with C language and teach them some basic data structures such as array, list and so on.![](pic.png)
-<center style="font-size:14px;color:#C0C0C0;text-decoration:underline">recitation lecture note</center> 
+  - help freshmen master how to program with C language and teach them some basic data structures such as array, list and so on.
+
+  <div align=center><img src="../images/pic.png" width="75%"></div>
+
+  <center style="font-size:14px;color:#C0C;text-decoration:underline">recitation lecture note</center> 
 
 
 # 🎖 Honors and Awards
@@ -39,17 +43,26 @@ My research interest includes *Recommendation* and *LLM4Rec*. But actually, I ha
 - *2022*: Yang Yongman Scholarship, HuaXia Computer Science Talent Class Scholarship
 - *2021*: Outstanding Freshman Scholarship Grade 3.
 
+# 📚 Course Projects
+
+- *2023.06~2023.07*: CPU design based on RISC-V
+  - This was a course project I finished in my *Computer Organization Honor class* with verilog language and Vivado software on my own. In this project, I designed a CPU based on RISC-V, realizing the functions including *data cache, pipeline and so on*. [Link to my project]()
+- *2023.04~2023.07*: Optimize the Real-time quality of ROS2
+  - This was a project my teammates and I finished in *OSH(Operating System Honor class)*. Actually, we wanna optimize the real-time quality of ROS2 operating system with *DCA*, but we failed in the end. [Link to our project](https://github.com/OSH-2023/Code-ForWWWard)
+- *2022.12*: FPGA
+  - We designed an interesting game called Tetris with verilog language, using Vivado software. [Link to our project](https://github.com/Melmaphother/Tetris-verilog)
+
 # 📖 Education
 
-- *2021.09~2025.06(expected)*, Bachelor in Computer Science in USTC. GPA/Percentage: 3.90/5.2%.
+- *2021.09~2025.06(expected)*, Bachelor in Computer Science in USTC. *GPA/Percentage: 3.90/5.2%*.
 
 # 🔥 News
-- *2023.09*: &nbsp;🎉🎉 I take TOEFL test for the first time. (Preparing for TOEFL is really tough for me, since I'm not that good at English.)
+- *2023.09*: &nbsp;🎉🎉 I take TOEFL test for the first time. (Preparing for TOEFL is really tough for me, since I'm not that good at English)
 - *2023.03*: &nbsp;🎉🎉 I become an undergraduate intern of [LDS](https://data-science.ustc.edu.cn/_upload/tpl/12/e9/4841/template4841/index.html) lead by [Xiangnan HE](https://hexiangnan.github.io/) .
 
 # 📝 Publications 
 
-I am not that talented so I haven't published a paper. But I firmly believe that in the near future I will publish a paper. 💪💪💪
+I'm not talented enough in fact, thus I haven't published any paper. But I firmly believe that in the near future I will publish a paper alone. 💪💪💪
 
 <!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1"> -->
