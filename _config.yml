@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Terence Wang"
-description              : "This is the homepage of Terence Wang"
+description              : "Fun fact: I'm not fun at all"
 repository               : "Wloner0809/Wloner0809.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -21,9 +21,9 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Yu Wang(Terence)"
-  avatar           : "images/pic8.jpg"
-  bio              : "A student in University of Science and Technology of China, majoring in Computer Science."
+  name             : "Yu Wang(Terence Wang)"
+  avatar           : "images/pic2.jpg"
+  bio              : "A student in University of Science and Technology of China, majoring in Computer Science now."
   location         : "Hefei, China"
   employer         :
   pubmed           : 

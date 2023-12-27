@@ -17,13 +17,28 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Yu Wang(Terence) is a junior student of USTC, majoring in **CS(computer science)** now.
+Hello, welcome to **Yu Wang**'s homepage. I am a junior student of [USTC(University of Science and Technology of China)](https://en.ustc.edu.cn/), majoring in **CS(computer science)** now. My Chinese name is **王昱** while my English name is **Terence**, so you can call me **Terence Wang**.
 
-My research interest includes Recommendation and LLM4Rec.
+My research interest includes Recommendation and LLM4Rec. But actually, I haven't figured out what I am passionate about(Hope to find it one day).
+
+# 💻 Experience
+
+- *2023.03~Now*: Undergraduate Intern of [LDS](https://data-science.ustc.edu.cn/_upload/tpl/12/e9/4841/template4841/index.html) lead by [Xiangnan HE](https://hexiangnan.github.io/).
+  - During this internship, I focus myself on *LLM4Rec*. I have read tens of papers relevant to *LLM4Rec*, and reproduced several papers with codes. What's more, I am doing some research on an *idea* now.
+
+# 🎖 Honors and Awards
+
+- *2023*: Outstanding Student Scholarship Grade 2
+- *2022*: Yang Yongman Scholarship, HuaXia Computer Science Talent Class Scholarship
+- *2021*: Outstanding Freshman Scholarship Grade 3.
+
+# 📖 Educations
+
+- *2021.09~2025.06(expected)*, Bachelor in Computer Science in USTC. GPA/Percentage: 3.90/5.2%.
 
 # 🔥 News
-
-- *2022.03*: &nbsp;🎉🎉 I become a student intern of [LDS](https://data-science.ustc.edu.cn/_upload/tpl/12/e9/4841/template4841/index.html) lead by [Xiangnan HE](https://hexiangnan.github.io/) .
+- *2023.09*: &nbsp;🎉🎉 I take TOEFL test for the first time. (Preparing for TOEFL is really tough for me, since I'm not that good at English.)
+- *2023.03*: &nbsp;🎉🎉 I become an undergraduate intern of [LDS](https://data-science.ustc.edu.cn/_upload/tpl/12/e9/4841/template4841/index.html) lead by [Xiangnan HE](https://hexiangnan.github.io/) .
 
 # 📝 Publications 
 
@@ -45,19 +60,5 @@ I am not that talented so I haven't published a paper. But I firmly believe that
 
 - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
-# 🎖 Honors and Awards
 
-- *2023* Outstanding Student Scholarship Grade 2
-- *2022* Yang Yongman Scholarship, HuaXia Computer Science Talent Class Scholarship
-- *2021* Outstanding Freshman Scholarship Grade 3.
 
-# 📖 Educations
-
-- *2021.09~2025.06(expected)*, Bachelor in Computer Science in USTC, GPA/Percentage: 3.90/5.2%.
-
-<!-- # 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
-
-# 💻 Internships
-<!-- - *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->
