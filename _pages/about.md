@@ -24,7 +24,7 @@ My research interests include *Recommendation*, *NLP* and *LLM4Rec*. But actuall
 
 # 💻 Research Experience
 
-- *2023.03~Now*: Undergraduate Intern of [LDS](https://data-science.ustc.edu.cn/_upload/tpl/12/e9/4841/template4841/index.html) lead by [Xiangnan HE](https://hexiangnan.github.io/).
+- *2023.03~Now*: Undergraduate Intern of [LDS](https://data-science.ustc.edu.cn/_upload/tpl/12/e9/4841/template4841/index.html) led by [Xiangnan HE](https://hexiangnan.github.io/).
   - During this internship, I focus myself on *LLM4Rec*. I have read tens of papers relevant to *LLM4Rec*, and reproduced several papers with codes. What's more, I am doing some research on an *idea* now.
 
 # 🧑‍🏫 Teaching Experience
@@ -57,8 +57,8 @@ My research interests include *Recommendation*, *NLP* and *LLM4Rec*. But actuall
 - *2021.09~2025.06(expected)*, Bachelor in Computer Science in USTC. *GPA/Percentage: 3.90/5.2%*.
 
 # 🔥 News
-- *2023.09*: &nbsp;🎉🎉 I take TOEFL test for the first time. (Preparing for TOEFL is really tough for me, since I'm not that good at English)
-- *2023.03*: &nbsp;🎉🎉 I become an undergraduate intern of [LDS](https://data-science.ustc.edu.cn/_upload/tpl/12/e9/4841/template4841/index.html) lead by [Xiangnan HE](https://hexiangnan.github.io/) .
+- *2023.09*: &nbsp;🎉🎉 I took TOEFL test for the first time. (Preparing for TOEFL is really tough for me, since I'm not that good at English)
+- *2023.03*: &nbsp;🎉🎉 I became an undergraduate intern of [LDS](https://data-science.ustc.edu.cn/_upload/tpl/12/e9/4841/template4841/index.html) lead by [Xiangnan HE](https://hexiangnan.github.io/) .
 
 # 📝 Publications 
 
