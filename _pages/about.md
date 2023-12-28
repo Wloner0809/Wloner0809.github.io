@@ -58,7 +58,7 @@ My research interests include *Recommendation*, *NLP* and *LLM4Rec*. But actuall
 
 # 🔥 News
 - *2023.09*: &nbsp;🎉🎉 I took TOEFL test for the first time. (Preparing for TOEFL is really tough for me, since I'm not that good at English)
-- *2023.03*: &nbsp;🎉🎉 I became an undergraduate intern of [LDS](https://data-science.ustc.edu.cn/_upload/tpl/12/e9/4841/template4841/index.html) lead by [Xiangnan HE](https://hexiangnan.github.io/) .
+- *2023.03*: &nbsp;🎉🎉 I became an undergraduate intern of [LDS](https://data-science.ustc.edu.cn/_upload/tpl/12/e9/4841/template4841/index.html) led by [Xiangnan HE](https://hexiangnan.github.io/) .
 
 # 📝 Publications 
 
