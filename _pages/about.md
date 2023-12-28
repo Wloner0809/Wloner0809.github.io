@@ -46,7 +46,7 @@ My research interests include *Recommendation*, *NLP* and *LLM4Rec*. But actuall
 # 📚 Course Projects
 
 - *2023.06~2023.07*: CPU design based on RISC-V
-  - This was a course project I finished in my *Computer Organization Honor class* with verilog language and Vivado software on my own. In this project, I designed a CPU based on RISC-V, realizing the functions including *data cache, pipeline and so on*. [Link to my project]()
+  - This was a course project I finished in my *Computer Organization Honor class* with verilog language and Vivado software on my own. In this project, I designed a CPU based on RISC-V, realizing the functions including *data cache, pipeline and so on*. [Link to my project](https://github.com/Wloner0809/ustc-codh-2023/tree/main/lab6)
 - *2023.04~2023.07*: Optimize the Real-time quality of ROS2
   - This was a project my teammates and I finished in *OSH(Operating System Honor class)*. Actually, we wanna optimize the real-time quality of ROS2 operating system with *DCA*, but we failed in the end. [Link to our project](https://github.com/OSH-2023/Code-ForWWWard)
 - *2022.12*: FPGA
