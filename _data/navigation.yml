@@ -6,14 +6,8 @@ main:
   - title: "Research Experience"
     url: "/#-research-experience"
 
-  - title: "Teaching Experience"
-    url: "/#-teaching-experience"
-
   - title: "Honors and Awards"
     url: "/#-honors-and-awards"
-  
-  - title: "Course Projects"
-    url: "/#-course-projects"
 
   - title: "Education"
     url: "/#-education"
