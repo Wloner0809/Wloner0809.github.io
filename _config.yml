@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Terence Wang"
+title                    : "Yu Wang"
 description              : "Fun fact: I'm not fun at all"
 repository               : "Wloner0809/Wloner0809.github.io"
 google_scholar_stats_use_cdn : false
@@ -21,7 +21,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Yu Wang(Terence Wang)"
+  name             : "Yu Wang"
   avatar           : "images/android-chrome-192x192.png"
   bio              : "Senior student majoring in Computer Science"
   location         : "Hefei, China"
