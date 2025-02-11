@@ -1,0 +1,35 @@
+# main:
+#   - title: 'Aligning LLMs with Individual Preferences via Interaction'
+#     authors: <strong>Shujin Wu</strong>, May Fung, Cheng Qian, Jeonghwan Kim, Dilek Hakkani-Tur, Heng Ji
+#     conference_short: COLING 2025
+#     conference: COLING 2025
+#     pdf: https://arxiv.org/pdf/2410.03642
+#     arxiv: http://arxiv.org/abs/2410.03642
+#     code: https://github.com/ShujinWu-0814/ALOE
+#     bibtex: ./assets/files/ALOE.txt
+#     image: ./assets/files/ALOE.png
+#     notes: Published
+
+#   - title: 'MACAROON: Training Vision-Language Models To Be Your Engaged Partners'
+#     authors: <strong>Shujin Wu</strong>, Yi R Fung, Sha Li, Yixin Wan, Kai-Wei Chang, Heng Ji
+#     conference_short: EMNLP 2024
+#     conference: EMNLP 2024 Findings
+#     pdf: https://arxiv.org/pdf/2406.14137
+#     arxiv: https://arxiv.org/abs/2406.14137
+#     code: https://github.com/ShujinWu-0814/MACAROON
+#     bibtex: ./assets/files/macaroon.txt
+#     image: ./assets/files/macaroon.png
+#     notes: Published
+    
+#   - title: 'SaySelf: Teaching LLMs to Express Confidence with Self-Reflective Rationales'
+#     authors: Tianyang Xu*, <strong>Shujin Wu*</strong>, Shizhe Diao, Xiaoze Liu, Xingyao Wang, Yangyi Chen, Jing Gao
+#     conference_short: EMNLP 2024
+#     conference: EMNLP 2024 Main Conference
+#     pdf: https://arxiv.org/pdf/2405.20974
+#     arxiv: https://arxiv.org/abs/2405.20974
+#     code: https://github.com/ShujinWu-0814/SaySelf
+#     bibtex: ./assets/files/sayself.txt
+#     image: ./assets/files/sayself.png
+#     notes: Published
+
+  

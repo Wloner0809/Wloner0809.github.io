@@ -1,0 +1,9 @@
+@misc{wu2024aligningllmsindividualpreferences,
+      title={Aligning LLMs with Individual Preferences via Interaction}, 
+      author={Shujin Wu and May Fung and Cheng Qian and Jeonghwan Kim and Dilek Hakkani-Tur and Heng Ji},
+      year={2024},
+      eprint={2410.03642},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.03642}, 
+}

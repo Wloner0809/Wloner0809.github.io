@@ -1,163 +1,66 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# Basic Information 
+title: Yu Wang
+affiliation: University of Science and Technology of China
+subaffiliation: School of Computer Science and Technology
+affiliation_link: https://en.ustc.edu.cn/
+subaffiliation_link: https://cs.ustc.edu.cn/main.htm
+email: terencewang0809@gmail.com
+email2: wloner@mail.ustc.edu.cn
 
-# Site Settings
-title                    : "Yu Wang"
-description              : "Fun fact: I'm not fun at all"
-repository               : "Wloner0809/Wloner0809.github.io"
-google_scholar_stats_use_cdn : false
+# Search Engine Optimization (SEO)
+keywords: Yu Wang, yu wang, YuWang, Yuwang, yuwang, Wang Yu, wang yu, WangYu, Wangyu, wangyu
+canonical: https://minimal-light-theme.yliu.me/
+description: Yu Wang is a senior undergraduate student from USTC.
 
-# google analytics
-google_analytics_id      : G-1Z4R8H56E0 # get google_analytics_id from https://analytics.google.com/analytics/
+# The option is used to enable the Johns Hopkins template.
+enable_hopkins_logo: false
 
-# SEO Related
-google_site_verification : -c2R2tUO80BsZT5EQsiruUoS-W8p79tSY8pNHbBbzr0 # get google_site_verification from https://search.google.com/search-console/about
-bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
-baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
+# The option is used to show the last update time.
+enable_last_update: false
 
-# Site Author
-author:
-  name             : "Yu Wang"
-  avatar           : "images/android-chrome-192x192.png"
-  bio              : "Senior student majoring in Computer Science"
-  location         : "Hefei, China"
-  employer         :
-  pubmed           : 
-  # googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
-  email            : "terencewang0809@gmail.com"
-  researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  github           : Wloner0809
-  google_plus      :
-  keybase          :
-  instagram        :
-  impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
-  lastfm           :
-  linkedin         : # e.g., "linkedin username"
-  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : # e.g., "https://orcid.org/xxxx"
-  pinterest        :
-  soundcloud       :
-  # stackoverflow    : https://stackoverflow.com/users/21208116
-  steam            : 
-  tumblr           :
-  twitter          : 
-  vine             :
-  weibo            : 
-  xing             :
-  youtube          : 
-  wikipedia        :
+# Links
+# google_scholar: https://scholar.google.com/citations?user=kFPPHWUAAAAJ&hl=en
+github_link: https://github.com/Wloner0809
+linkedin: https://www.linkedin.com/in/yu-wang-b9535a2b6/
+twitter: https://x.com/TerenceWang0809
 
+# Images 
+avatar: ./assets/img/avatar.jpg
+favicon: ./assets/img/favicon.jpg
+favicon_dark: ./assets/img/favicon.jpg
 
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-  - files
-exclude:
-  - docs
-  - google_scholar_crawler
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - .github
-  - CHANGELOG
-  - Capfile
-  - Gemfile
-  - Gruntfile.js
-  - LICENSE
-  - README
-  - Rakefile
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
-  - config
-  - gulpfile.js
-  - log
-  - node_modules
-  - package.json
-  - tmp
-  - vendor
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+# Footnotes
+# Footnote
+# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
+enable_footnote: false
+#footnote: Feel free to use my website's source code.
+#footnote_link: https://github.com/yaoyao-liu/minimal-light
 
+# Analytics
+# Please remove the following lines about analytics services if you fork my project. 
+# Otherwise, the analytics information of your website will be recorded to my ClustrMaps accounts.
+# clustrmaps_id: ${{ secrets.CLUSTRMAPS_ID }}
 
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
+# Google Analytics ID
+# Please remove this if you don't use Google Analytics
+google_analytics_id: G-1Z4R8H56E0
+google_site_verification: -c2R2tUO80BsZT5EQsiruUoS-W8p79tSY8pNHbBbzr0
 
+# Use this project as a remote theme for GitHub Pages
+# See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+remote_theme: yaoyao-liu/minimal-light
 
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-# Defaults
-defaults:
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: default
-      author_profile: true
-
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-# Outputting
-permalink: /:categories/:title/
-timezone: Asia/Shanghai # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-redirect-from
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
+- jekyll-remote-theme # add this line to the plugins list if you already have one
 
 
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+
+
+# The following files will be removed from the generated website.
+exclude:
+  - build.sh
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - CNAME
