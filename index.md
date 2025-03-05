@@ -6,10 +6,10 @@ layout: homepage
 
 <h2 style="margin: 60px 0px 10px;">Short Bio</h2>
 
-Hello!👋 I am a senior undergraduate student from [University of Science and Technology of China](https://en.ustc.edu.cn/) and currently work as a research intern at [MSR Asia](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia-zh-cn/), under the supervision of [Furu Wei](https://thegenerality.com/) and the mentorship of [Nan Yang](https://www.microsoft.com/en-us/research/people/nanya/). My research interest mainly lies in:
+Hello!👋 I am a senior undergraduate student from [University of Science and Technology of China](https://en.ustc.edu.cn/) and currently work as a research intern at [MSR Asia](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia-zh-cn/), under the supervision of [Furu Wei](https://thegenerality.com/) and the mentorship of [Nan Yang](https://www.microsoft.com/en-us/research/people/nanya/), [Liang Wang](https://www.microsoft.com/en-us/research/people/wangliang/). My research interest mainly lies in:
 - **LLM Reasoning:** Train reasoning models with long-thinking capabilities, similar to OpenAI-o1 and DeepSeek-R1, or enhance model reasoning abilities through alternative methods such as hidden CoT. Meanwhile, investigate the inference scaling laws of reasoning.
 - **AI Alignment:** Explore the application of different *RLHF* and *RL* algorithms across various scenarios.
-- **Multi-Agent System**
+- **Agent:** Build web agents or something similar.
 
 I am always eager for discussions and collaborations! Feel free to email me!
 
