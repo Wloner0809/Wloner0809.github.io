@@ -1,0 +1,66 @@
+# Basic Information 
+title: Yu Wang
+affiliation: University of Science and Technology of China
+subaffiliation: School of Computer Science and Technology
+affiliation_link: https://en.ustc.edu.cn/
+subaffiliation_link: https://cs.ustc.edu.cn/main.htm
+email: terencewang0809@gmail.com
+email2: wloner@mail.ustc.edu.cn
+
+# Search Engine Optimization (SEO)
+keywords: Yu Wang, yu wang, YuWang, Yuwang, yuwang, Wang Yu, wang yu, WangYu, Wangyu, wangyu
+canonical: https://minimal-light-theme.yliu.me/
+description: Yu Wang is a senior undergraduate student from USTC.
+
+# The option is used to enable the Johns Hopkins template.
+enable_hopkins_logo: false
+
+# The option is used to show the last update time.
+enable_last_update: false
+
+# Links
+google_scholar: https://scholar.google.com/citations?user=w55OAegAAAAJ&hl=en
+github_link: https://github.com/Wloner0809
+linkedin: https://www.linkedin.com/in/yu-wang-b9535a2b6/
+twitter: https://x.com/TerenceWang0809
+
+# Images 
+avatar: ./assets/img/avatar.jpg
+favicon: ./assets/img/favicon.jpg
+favicon_dark: ./assets/img/favicon.jpg
+
+# Footnotes
+# Footnote
+# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
+enable_footnote: false
+#footnote: Feel free to use my website's source code.
+#footnote_link: https://github.com/yaoyao-liu/minimal-light
+
+# Analytics
+# Please remove the following lines about analytics services if you fork my project. 
+# Otherwise, the analytics information of your website will be recorded to my ClustrMaps accounts.
+# clustrmaps_id: ${{ secrets.CLUSTRMAPS_ID }}
+
+# Google Analytics ID
+# Please remove this if you don't use Google Analytics
+google_analytics_id: G-1Z4R8H56E0
+google_site_verification: -c2R2tUO80BsZT5EQsiruUoS-W8p79tSY8pNHbBbzr0
+
+# Use this project as a remote theme for GitHub Pages
+# See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
+remote_theme: yaoyao-liu/minimal-light
+
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
+
+
+
+# The following files will be removed from the generated website.
+exclude:
+  - build.sh
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - CNAME

@@ -1,0 +1,12 @@
+main:
+  - title: "Examining False Positives under Inference Scaling for Mathematical Reasoning"
+    authors: <strong>Yu Wang</strong>, Nan Yang, Liang Wang, Furu Wei
+    conference_short: Preprint
+    conference: Arxiv Preprint
+    pdf: https://arxiv.org/pdf/2502.06217
+    arxiv: https://arxiv.org/abs/2502.06217
+    code: https://github.com/Wloner0809/False-Positives-in-Math
+    bibtex: ./assets/files/math_false_positive.txt
+    # image:
+    notes: Preprint
+    citation: w55OAegAAAAJ:u5HHmVD_uO8C

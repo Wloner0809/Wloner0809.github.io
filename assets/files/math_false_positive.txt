@@ -1,0 +1,6 @@
+@article{wang2025examining,
+  title={Examining False Positives under Inference Scaling for Mathematical Reasoning},
+  author={Wang, Yu and Yang, Nan and Wang, Liang and Wei, Furu},
+  journal={arXiv preprint arXiv:2502.06217},
+  year={2025}
+}
