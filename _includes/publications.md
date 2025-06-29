@@ -69,7 +69,7 @@ The code is written in Markdown and is intended to be used in a website or web p
       <strong> <a style="color:#e74d3c; font-weight:600"> • <i class="total_citation_mtl" data-citation="{{ link.citation }}"></i> <i style="color:#e74d3c; font-weight:600"> Citations </i></a></strong>
       <script>
         $(document).ready(function () {
-            var gsDataBaseUrl = 'https://raw.githubusercontent.com/Wloner0809/wloner0809.github.io/';
+            var gsDataBaseUrl = 'https://raw.githubusercontent.com/Wloner0809/Wloner0809.github.io/';
             $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
                 var citationEles = document.getElementsByClassName('total_citation_mtl');
                 Array.prototype.forEach.call(citationEles, function(element) {
