@@ -31,7 +31,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/pub.css">
-    <link rel="stylesheet" href="./assets/css/nav.css">
 
     <script src="./assets/js/github-stars.js"></script>
     <script type="text/javascript" src="./assets/js/jquery.js"></script>
@@ -47,50 +46,10 @@
         }
     </script>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
-
 
 </head>
 
 <body>
-
-    <div class="topnav">
-
-        <a href="https://en.ustc.edu.cn/"><img width="190" src=""></a>
-
-        <div id="myLinks">
-            
-  
-    <a class="normal" href="./#publications">Publications</a>
-  
-
-  
-    <a class="normal" href="./#news">News</a>
-  
-
-  
-    <a class="normal" href="./#about-me">Bio</a>
-  
-
-
-
-        </div>
-
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-
-    </div>
-
 
     <script src="./assets/js/vanilla-back-to-top.min.js"></script>
     <script>addBackToTop({
@@ -182,18 +141,23 @@
 
 <h2 style="margin: 60px 0px 10px;">Short Bio</h2>
 
-<p>Hello!👋 I am a senior undergraduate student from <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a> and currently work as a research intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia-zh-cn/">MSR Asia</a>, under the supervision of <a href="https://thegenerality.com/">Furu Wei</a> and the mentorship of <a href="https://www.microsoft.com/en-us/research/people/nanya/">Nan Yang</a>, <a href="https://www.microsoft.com/en-us/research/people/wangliang/">Liang Wang</a>. My research interest mainly lies in:</p>
+<p>Hello!👋 I am a 1st-year master student from <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a> advised by <a href="https://fulifeng.github.io/">Fuli Feng</a> &amp; mentored by <a href="https://swt-user.github.io/">Wentao Shi</a>. Previously, I worked as a research intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia-zh-cn/">MSR Asia</a>, under the supervision of <a href="https://thegenerality.com/">Furu Wei</a> and the mentorship of <a href="https://www.microsoft.com/en-us/research/people/nanya/">Nan Yang</a>, <a href="https://www.microsoft.com/en-us/research/people/wangliang/">Liang Wang</a>. My research interest mainly lies in:</p>
 <ul>
-  <li><strong>LLM Reasoning:</strong> Train reasoning models with long-thinking capabilities, similar to OpenAI-o1 and DeepSeek-R1, or enhance model reasoning abilities through alternative methods such as hidden CoT. Meanwhile, investigate the inference scaling laws of reasoning.</li>
-  <li><strong>AI Alignment:</strong> Explore the application of different <em>RLHF</em> and <em>RL</em> algorithms across various scenarios.</li>
-  <li><strong>Agent:</strong> Build search agents (DeepResearch).</li>
+  <li><strong>LLM Reasoning</strong> &amp; <strong>Reinforcement Learning</strong></li>
+  <li><strong>Agent</strong> &amp; <strong>Agentic RL</strong></li>
 </ul>
 
 <p>I am always eager for discussions and collaborations! Feel free to email me!</p>
 
+<h2 id="research-experience">Research Experience</h2>
+<ul>
+  <li>2024.09 - 2025.06, Research Intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia-zh-cn/">MSR Asia</a>.</li>
+</ul>
+
 <h2 id="education">Education</h2>
 <ul>
-  <li><strong>B.E in Computer Science</strong>, 2021 - 2025(expected), <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a>, Hefei, Anhui, China</li>
+  <li><strong>M.E in Artificial Intelligence</strong>, 2025.09 - 2028.06(expected), <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a>, Hefei, Anhui, China</li>
+  <li><strong>B.E in Computer Science</strong>, 2021.09 - 2025.06, <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a>, Hefei, Anhui, China</li>
 </ul>
 
 <h1 id="news"></h1>
@@ -201,6 +165,10 @@
 <h2 style="margin: 30px 0px 10px;">News</h2>
 
 <ul>
+<li><strong>[Sep. 2025]</strong> Become a master student of <span style="color:#f59ab2"><a href="https://data-science.ustc.edu.cn/_upload/tpl/15/04/5380/template5380/index.html">LDS</a></span> at <span style="color:#f59ab2"><a href="https://en.ustc.edu.cn/">USTC</a></span>! 🥳</li>
+
+<li><strong>[Aug. 2025]</strong> One paper is accepted by EMNLP25'. See you in Suzhou, China! 🥰</li>
+
 <li><strong>[Sep. 2024]</strong> Become a research intern of <span style="color:#f59ab2"><a href="https://www.microsoft.com/en-us/research/group/general-artificial-intelligence/">General AI Group</a></span> at <span style="color:#f59ab2"><a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia-zh-cn/">MSR Asia</a></span>! 🍾</li>
 </ul>
 
@@ -239,8 +207,8 @@ The code is written in Markdown and is intended to be used in a website or web p
   <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
   
       <div class="title"><a href="https://arxiv.org/pdf/2502.06217">Examining False Positives under Inference Scaling for Mathematical Reasoning</a></div>
-      <div class="author"><strong>Yu Wang</strong>, Nan Yang, Liang Wang, Furu Wei</div>
-      <div class="periodical"><em>Arxiv Preprint</em>
+      <div class="author"><strong>Yu Wang</strong>, Nan Yang, Liang Wang, Furu Wei, Fuli Feng</div>
+      <div class="periodical"><em>EMNLP 2025</em>
       </div>
     <div class="links">
        
@@ -257,24 +225,30 @@ The code is written in Markdown and is intended to be used in a website or web p
       <a href="./assets/files/math_false_positive.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
       
        
-      <strong> <i style="color:#e74d3c">Preprint</i></strong>
+      <strong> <i style="color:#e74d3c">EMNLP 2025 Main</i></strong>
       
       
        
       <strong> <a style="color:#e74d3c; font-weight:600"> • <i class="total_citation_mtl" data-citation="w55OAegAAAAJ:u5HHmVD_uO8C"></i> <i style="color:#e74d3c; font-weight:600"> Citations </i></a></strong>
       <script>
         $(document).ready(function () {
-            var gsDataBaseUrl = "https://github.com/Wloner0809/Wloner0809.github.io/";
-            $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+            var gsDataBaseUrl = 'https://raw.githubusercontent.com/Wloner0809/Wloner0809.github.io/main/';
+            $.getJSON(gsDataBaseUrl + "google_scholar_crawler/results/gs_data.json", function (data) {
                 var citationEles = document.getElementsByClassName('total_citation_mtl');
                 Array.prototype.forEach.call(citationEles, function(element) {
                     var citationKey = element.getAttribute('data-citation');
-                    if (data['publications'][citationKey]) {
+                    if (data && data['publications'] && data['publications'][citationKey]) {
                         var numCitations = data['publications'][citationKey]['num_citations'];
-                        element.innerHTML = numCitations;
+                        element.innerHTML = numCitations || '0';
                     } else {
                         element.innerHTML = 'N/A';
                     }
+                });
+            }).fail(function(jqXHR, textStatus, errorThrown) {
+                console.log('Failed to load citation data:', textStatus, errorThrown);
+                var citationEles = document.getElementsByClassName('total_citation_mtl');
+                Array.prototype.forEach.call(citationEles, function(element) {
+                    element.innerHTML = 'N/A';
                 });
             });
         });

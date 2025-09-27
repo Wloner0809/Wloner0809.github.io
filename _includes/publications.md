@@ -23,8 +23,8 @@ The code is written in Markdown and is intended to be used in a website or web p
 
 <div class="publications">
 <ol class="bibliography">
-{% assign gsDataBaseUrl = 'https://raw.githubusercontent.com/Wloner0809/wloner0809.github.io/' %}
-{% assign url = gsDataBaseUrl | append: 'google-scholar-stats/gs_data.json' %}
+{% assign gsDataBaseUrl = 'https://raw.githubusercontent.com/Wloner0809/Wloner0809.github.io/main/' %}
+{% assign url = gsDataBaseUrl | append: 'google_scholar_crawler/results/gs_data.json' %}
 {% for link in site.data.publications.main %}
 
 
@@ -69,17 +69,23 @@ The code is written in Markdown and is intended to be used in a website or web p
       <strong> <a style="color:#e74d3c; font-weight:600"> • <i class="total_citation_mtl" data-citation="{{ link.citation }}"></i> <i style="color:#e74d3c; font-weight:600"> Citations </i></a></strong>
       <script>
         $(document).ready(function () {
-            var gsDataBaseUrl = 'https://raw.githubusercontent.com/Wloner0809/Wloner0809.github.io/';
-            $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+            var gsDataBaseUrl = 'https://raw.githubusercontent.com/Wloner0809/Wloner0809.github.io/main/';
+            $.getJSON(gsDataBaseUrl + "google_scholar_crawler/results/gs_data.json", function (data) {
                 var citationEles = document.getElementsByClassName('total_citation_mtl');
                 Array.prototype.forEach.call(citationEles, function(element) {
                     var citationKey = element.getAttribute('data-citation');
-                    if (data['publications'][citationKey]) {
+                    if (data && data['publications'] && data['publications'][citationKey]) {
                         var numCitations = data['publications'][citationKey]['num_citations'];
-                        element.innerHTML = numCitations;
+                        element.innerHTML = numCitations || '0';
                     } else {
                         element.innerHTML = 'N/A';
                     }
+                });
+            }).fail(function(jqXHR, textStatus, errorThrown) {
+                console.log('Failed to load citation data:', textStatus, errorThrown);
+                var citationEles = document.getElementsByClassName('total_citation_mtl');
+                Array.prototype.forEach.call(citationEles, function(element) {
+                    element.innerHTML = 'N/A';
                 });
             });
         });
