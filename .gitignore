@@ -166,3 +166,6 @@ cython_debug/
 
 # Local bundler config (user environment)
 .bundle/
+
+# Local Scholar updater (real copy lives in ~/.scholar-agent/, contains machine-specific paths)
+google_scholar_crawler/update_scholar_local.sh
