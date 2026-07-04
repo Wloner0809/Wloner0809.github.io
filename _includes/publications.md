@@ -60,13 +60,13 @@ The code is written in Markdown and is intended to be used in a website or web p
       <a href="{{ link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
       {% endif %}
       {% if link.notes %} 
-      <strong> <i style="color:#e74d3c">{{ link.notes }}</i></strong>
+      <strong> <i style="color:var(--accent-warm)">{{ link.notes }}</i></strong>
       {% endif %}
       {% if link.others %} 
       {{ link.others }}
       {% endif %}
       {% if link.citation %} 
-      <strong> <a style="color:#e74d3c; font-weight:600"> • <i class="total_citation_mtl" data-citation="{{ link.citation }}"></i> <i style="color:#e74d3c; font-weight:600"> Citations </i></a></strong>
+      <strong> <a style="color:var(--accent-warm); font-weight:600"> • <i class="total_citation_mtl" data-citation="{{ link.citation }}"></i> <i style="color:var(--accent-warm); font-weight:600"> Citations </i></a></strong>
       <script>
         $(document).ready(function () {
             var gsDataBaseUrl = 'https://raw.githubusercontent.com/Wloner0809/Wloner0809.github.io/main/';
