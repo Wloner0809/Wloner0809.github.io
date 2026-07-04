@@ -5,6 +5,9 @@ on:
     - cron: '0 2 * * 1'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-scholar:
     runs-on: ubuntu-latest
@@ -24,7 +27,7 @@ jobs:
         pip install -r requirements.txt
         
     - name: Run scholar crawler with timeout
-      timeout-minutes: 10
+      timeout-minutes: 20
       env:
         GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
       run: |
