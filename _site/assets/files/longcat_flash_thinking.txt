@@ -1,0 +1,6 @@
+@article{team2026longcat,
+  title={Longcat-flash-thinking-2601 technical report},
+  author={Team, Meituan LongCat and Gui, Anchun and Li, Bei and Tao, Bingyang and Zhou, Bole and Chen, Borun and Zhang, Chao and Gao, Chen and Zhang, Chen and Han, Chengcheng and others},
+  journal={arXiv preprint arXiv:2601.16725},
+  year={2026}
+}

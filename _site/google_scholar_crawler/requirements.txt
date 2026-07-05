@@ -2,3 +2,4 @@ jsonpickle==1.4.2
 scholarly==1.5.1
 requests==2.31.0
 selenium==4.15.0
+free-proxy==1.1.1

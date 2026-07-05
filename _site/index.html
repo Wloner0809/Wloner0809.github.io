@@ -4,6 +4,18 @@
 <head>
     <title>Yu Wang's Homepage</title>
 
+    <!-- Apply saved theme before paint to avoid a flash of the wrong theme. -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('theme');
+                if (saved === 'dark' || saved === 'light') {
+                    document.documentElement.setAttribute('data-theme', saved);
+                }
+            } catch (e) {}
+        })();
+    </script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="Yu Wang">
@@ -53,20 +65,28 @@
 
     <script src="./assets/js/vanilla-back-to-top.min.js"></script>
     <script>addBackToTop({
-            backgroundColor: '#fff',
-            innerHTML: 'Back to Top',
-            textColor: '#333'
+            diameter: 46,
+            backgroundColor: 'var(--card-bg)',
+            textColor: 'var(--heading)',
+            innerHTML: '<i class="fas fa-arrow-up"></i>'
         })
     </script>
     <style>
         #back-to-top {
-            border: 1px solid #ccc;
-            border-radius: 0;
-            font-size: 15px;
-            width: 100px;
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            font-size: 16px;
+            width: 46px;
+            height: 46px;
+            line-height: 46px;
             text-align: center;
-            line-height: 30px;
-            height: 30px;
+            box-shadow: 0 2px 8px var(--avatar-shadow);
+            transition: transform 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+        }
+        #back-to-top:hover {
+            transform: translateY(-3px);
+            border-color: var(--link);
+            color: var(--link-hover);
         }
     </style>
 
@@ -134,136 +154,367 @@
             </div>
             <br>
 
+            <nav class="site-nav">
+                
+  
+    <a class="normal" href="./#publications">Publications</a>
+  
+
+  
+    <a class="normal" href="./#news">News</a>
+  
+
+  
+    <a class="normal" href="./#about-me">Bio</a>
+  
+
+
+
+            </nav>
+
+            <div class="sidebar-meta">
+                <a class="total-citations" href="https://scholar.google.com/citations?user=w55OAegAAAAJ&hl=en" target="_blank" rel="noopener" title="Total citations on Google Scholar">
+                    <i class="fas fa-quote-right"></i>
+                    <span class="tc-label">Citations</span>
+                    <span class="tc-count" id="total-citations-count">--</span>
+                </a>
+                <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle light / dark">
+                    <i class="fas fa-moon icon-moon"></i>
+                    <i class="fas fa-sun icon-sun"></i>
+                </button>
+            </div>
+
         </header>
         <section>
 
             <h1 id="about-me"></h1>
 
-<h2 style="margin: 60px 0px 10px;">Short Bio</h2>
+<h2 style="margin: 60px 0px 10px;" class="reveal">Short Bio</h2>
 
-<p>Hello!👋 I am a 1st-year master student from <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a> advised by <a href="https://fulifeng.github.io/">Fuli Feng</a> &amp; mentored by <a href="https://swt-user.github.io/">Wentao Shi</a>. Previously, I worked as a research intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia-zh-cn/">MSR Asia</a>, under the supervision of <a href="https://thegenerality.com/">Furu Wei</a> and the mentorship of <a href="https://www.microsoft.com/en-us/research/people/nanya/">Nan Yang</a>, <a href="https://www.microsoft.com/en-us/research/people/wangliang/">Liang Wang</a>. My research interest mainly lies in:</p>
-<ul>
-  <li><strong>LLM Reasoning</strong> &amp; <strong>Reinforcement Learning</strong></li>
-  <li><strong>Agent</strong> &amp; <strong>Agentic RL</strong></li>
-</ul>
+<div class="reveal">
+  <p>Hello!👋 I am a 1st-year master student from <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a> advised by <a href="https://fulifeng.github.io/">Fuli Feng</a> &amp; mentored by <a href="https://swt-user.github.io/">Wentao Shi</a>. Previously, I worked as a research intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia-zh-cn/">MSR Asia</a>, under the supervision of <a href="https://thegenerality.com/">Furu Wei</a> and the mentorship of <a href="https://www.microsoft.com/en-us/research/people/nanya/">Nan Yang</a>, <a href="https://www.microsoft.com/en-us/research/people/wangliang/">Liang Wang</a>. My research interest mainly lies in:</p>
+</div>
 
-<p>I am always eager for discussions and collaborations! Feel free to email me!</p>
+<div class="interest-grid reveal">
+  <div class="interest-card"><i class="fas fa-brain"></i><span class="ic-text">LLM Reasoning</span></div>
+  <div class="interest-card"><i class="fas fa-trophy"></i><span class="ic-text">RLVR / Agentic RL</span></div>
+  <div class="interest-card"><i class="fas fa-circle-check"></i><span class="ic-text">Verifier System</span></div>
+  <div class="interest-card"><i class="fas fa-gamepad"></i><span class="ic-text">Game Agent</span></div>
+  <div class="interest-card"><i class="fas fa-earth-asia"></i><span class="ic-text">Open World Agent</span></div>
+</div>
 
-<h2 id="research-experience">Research Experience</h2>
-<ul>
-  <li>2024.09 - 2025.06, Research Intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia-zh-cn/">MSR Asia</a>.</li>
-</ul>
+<div class="reveal">
+  <p>I am always eager for discussions and collaborations! Feel free to email me!</p>
+</div>
 
-<h2 id="education">Education</h2>
-<ul>
-  <li><strong>M.E in Artificial Intelligence</strong>, 2025.09 - 2028.06(expected), <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a>, Hefei, Anhui, China</li>
-  <li><strong>B.E in Computer Science</strong>, 2021.09 - 2025.06, <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a>, Hefei, Anhui, China</li>
-</ul>
+<h2 id="research-experience" style="margin: 30px 0px 10px;" class="reveal">Research Experience</h2>
+<div class="reveal">
+  <ul>
+    <li>2025.12 - Now, Research Intern at <a href="https://www.meituan.com/">Meituan LongCat</a>.</li>
+    <li>2024.09 - 2025.06, Research Intern at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia-zh-cn/">MSR Asia</a>.</li>
+  </ul>
+</div>
+
+<h2 id="education" style="margin: 30px 0px 10px;" class="reveal">Education</h2>
+<div class="reveal">
+  <ul>
+    <li><strong>M.E in Artificial Intelligence</strong>, 2025.09 - 2028.06(expected), <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a>, Hefei, Anhui, China</li>
+    <li><strong>B.E in Computer Science</strong>, 2021.09 - 2025.06, <a href="https://en.ustc.edu.cn/">University of Science and Technology of China</a>, Hefei, Anhui, China</li>
+  </ul>
+</div>
 
 <h1 id="news"></h1>
 
-<h2 style="margin: 30px 0px 10px;">News</h2>
+<h2 style="margin: 30px 0px 10px;" class="reveal">News</h2>
 
-<ul>
-<li><strong>[Sep. 2025]</strong> Become a master student of <span style="color:#f59ab2"><a href="https://data-science.ustc.edu.cn/_upload/tpl/15/04/5380/template5380/index.html">LDS</a></span> at <span style="color:#f59ab2"><a href="https://en.ustc.edu.cn/">USTC</a></span>! 🥳</li>
+<ul class="news-timeline reveal">
+<li><strong>[Apr. 2026]</strong> One paper is accepted by ACL26'! 🤩</li>
+
+<li><strong>[Dec. 2025]</strong> Become a research intern of <span style="color:var(--accent-warm)"><a href="https://www.meituan.com/">Meituan LongCat M17</a></span>!  🐘</li>
+
+<li><strong>[Sep. 2025]</strong> Become a master student of <span style="color:var(--accent-warm)"><a href="https://data-science.ustc.edu.cn/_upload/tpl/15/04/5380/template5380/index.html">LDS</a></span> at <span style="color:var(--accent-warm)"><a href="https://en.ustc.edu.cn/">USTC</a></span>! 🥳</li>
 
 <li><strong>[Aug. 2025]</strong> One paper is accepted by EMNLP25'. See you in Suzhou, China! 🥰</li>
 
-<li><strong>[Sep. 2024]</strong> Become a research intern of <span style="color:#f59ab2"><a href="https://www.microsoft.com/en-us/research/group/general-artificial-intelligence/">General AI Group</a></span> at <span style="color:#f59ab2"><a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia-zh-cn/">MSR Asia</a></span>! 🍾</li>
+<li><strong>[Sep. 2024]</strong> Become a research intern of <span style="color:var(--accent-warm)"><a href="https://www.microsoft.com/en-us/research/group/general-artificial-intelligence/">General AI Group</a></span> at <span style="color:var(--accent-warm)"><a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia-zh-cn/">MSR Asia</a></span>! 🍾</li>
 </ul>
 
-<!-- 
-This code generates a list of publications with various details such as title, authors, conference, links, and citation information. It uses a for loop to iterate over the publications data and dynamically generates the HTML markup for each publication.
-
-The publications are displayed in an ordered list (<ol>) with each publication represented as a list item (<li>). The list item contains a row (<div class="pub-row">) with two columns: one for the publication image and abbreviation, and the other for the publication details.
-
-The publication image is displayed using an <img> tag with the source specified by the "link.image" variable. The abbreviation of the conference is displayed as a badge using the <abbr> tag.
-
-The publication details such as title, authors, and conference are displayed within their respective <div> tags.
-
-The links associated with the publication (PDF, code, project page, BibTex) are displayed as buttons using the <a> tag with the appropriate href and target attributes. The buttons are styled using CSS classes.
-
-If there are any additional notes or other information associated with the publication, they are displayed using the <strong> and <i> tags.
-
-If the publication has citation information available, it is displayed within a nested for loop. The citation information includes the title, year, number of citations, and a link to the "Cited By" page.
-
-The code is written in Markdown and is intended to be used in a website or web page to display a list of publications.
-
+<!--
+Publications are rendered in two groups from _data/publications.yml:
+  selected — always visible (first-author / co-first / technical report)
+  others   — inside a collapsible <details> ("Other Publications")
+Each entry is rendered by _includes/pub-entry.html. Live citation counts are
+fetched once from the Google Scholar crawler JSON for all .total_citation_mtl.
 -->
 <h1 id="publications"></h1>
 
-<h2 style="margin: 30px 0px -15px;">Publications <temp style="font-size:15px;">[</temp><a href="https://scholar.google.com/citations?user=w55OAegAAAAJ&amp;hl=en" target="_blank" style="font-size:15px;">Google Scholar</a><temp style="font-size:15px;">]</temp><temp style="font-size:15px;">[</temp><a href="https://www.researchgate.net/profile/Yu-Wang-1162" target="_blank" style="font-size:15px;">ResearchGate</a><temp style="font-size:15px;">]</temp></h2>
+<h2 style="margin: 30px 0px -15px;" class="reveal">Publications <temp style="font-size:15px;">[</temp><a href="https://scholar.google.com/citations?user=w55OAegAAAAJ&amp;hl=en" target="_blank" style="font-size:15px;">Google Scholar</a><temp style="font-size:15px;">]</temp><temp style="font-size:15px;">[</temp><a href="https://www.researchgate.net/profile/Yu-Wang-1162" target="_blank" style="font-size:15px;">ResearchGate</a><temp style="font-size:15px;">]</temp></h2>
 
 <div class="publications">
 <ol class="bibliography">
 
-
-
-
-
-<li>
+<li class="reveal">
 <div class="pub-row">
   
   <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
   
-      <div class="title"><a href="https://arxiv.org/pdf/2502.06217">Examining False Positives under Inference Scaling for Mathematical Reasoning</a></div>
-      <div class="author"><strong>Yu Wang</strong>, Nan Yang, Liang Wang, Furu Wei, Fuli Feng</div>
-      <div class="periodical"><em>EMNLP 2025</em>
+      <div class="title">
+        <a href="https://arxiv.org/pdf/2601.16725">LongCat-Flash-Thinking-2601 Technical Report</a>
+        <span class="role-badge role-contrib">Contributor</span>
       </div>
+      <div class="author">Meituan LongCat Team</div>
+      
     <div class="links">
-       
-      <a href="https://arxiv.org/abs/2502.06217" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Arxiv</a>
       
-       
-      <a href="https://arxiv.org/pdf/2502.06217" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-      
-       
-      <a href="https://github.com/Wloner0809/False-Positives-in-Math" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      <a href="https://arxiv.org/abs/2601.16725" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Arxiv</a>
       
       
-       
-      <a href="./assets/files/math_false_positive.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
-      
-       
-      <strong> <i style="color:#e74d3c">EMNLP 2025 Main</i></strong>
+      <a href="https://arxiv.org/pdf/2601.16725" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       
       
-       
-      <strong> <a style="color:#e74d3c; font-weight:600"> • <i class="total_citation_mtl" data-citation="w55OAegAAAAJ:u5HHmVD_uO8C"></i> <i style="color:#e74d3c; font-weight:600"> Citations </i></a></strong>
-      <script>
-        $(document).ready(function () {
-            var gsDataBaseUrl = 'https://raw.githubusercontent.com/Wloner0809/Wloner0809.github.io/main/';
-            $.getJSON(gsDataBaseUrl + "google_scholar_crawler/results/gs_data.json", function (data) {
-                var citationEles = document.getElementsByClassName('total_citation_mtl');
-                Array.prototype.forEach.call(citationEles, function(element) {
-                    var citationKey = element.getAttribute('data-citation');
-                    if (data && data['publications'] && data['publications'][citationKey]) {
-                        var numCitations = data['publications'][citationKey]['num_citations'];
-                        element.innerHTML = numCitations || '0';
-                    } else {
-                        element.innerHTML = 'N/A';
-                    }
-                });
-            }).fail(function(jqXHR, textStatus, errorThrown) {
-                console.log('Failed to load citation data:', textStatus, errorThrown);
-                var citationEles = document.getElementsByClassName('total_citation_mtl');
-                Array.prototype.forEach.call(citationEles, function(element) {
-                    element.innerHTML = 'N/A';
-                });
-            });
-        });
-      </script>
+      <a href="https://github.com/meituan-longcat/LongCat-Flash-Thinking-2601" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      
+      
+      
+      <a href="./assets/files/longcat_flash_thinking.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
+      
+      
+      <strong> <i style="color:var(--accent-warm)">Technical Report</i></strong>
+      
+      
+      
+      <span class="cite-badge cite-badge-right" title="Citations"><i class="fas fa-graduation-cap"></i><span class="cite-num total_citation_mtl" data-citation="w55OAegAAAAJ:WF5omc3nYNoC"></span></span>
       
     </div>
   </div>
 </div>
-
 </li>
 
 <br />
 
 
-</ol></div>
+<li class="reveal">
+<div class="pub-row">
+  
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+  
+      <div class="title">
+        <a href="https://arxiv.org/pdf/2502.06217">Examining False Positives under Inference Scaling for Mathematical Reasoning</a>
+        
+      </div>
+      <div class="author"><strong>Yu Wang</strong>, Nan Yang, Liang Wang, Furu Wei, Fuli Feng</div>
+      
+    <div class="links">
+      
+      <a href="https://arxiv.org/abs/2502.06217" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Arxiv</a>
+      
+      
+      <a href="https://arxiv.org/pdf/2502.06217" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+      
+      <a href="https://github.com/Wloner0809/False-Positives-in-Math" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      
+      
+      
+      <a href="./assets/files/math_false_positive.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
+      
+      
+      <strong> <i style="color:var(--accent-warm)">EMNLP 2025 Main</i></strong>
+      
+      
+      
+      <span class="cite-badge cite-badge-right" title="Citations"><i class="fas fa-graduation-cap"></i><span class="cite-num total_citation_mtl" data-citation="w55OAegAAAAJ:u5HHmVD_uO8C"></span></span>
+      
+    </div>
+  </div>
+</div>
+</li>
+
+<br />
+
+
+<li class="reveal">
+<div class="pub-row">
+  
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+  
+      <div class="title">
+        <a href="https://arxiv.org/pdf/2604.18240">AJ-Bench: Benchmarking Agent-as-a-Judge for Environment-Aware Evaluation</a>
+        
+      </div>
+      <div class="author">Wentao Shi<sup>&dagger;</sup>, <strong>Yu Wang</strong><sup>&dagger;</sup>, Yuyang Zhao<sup>&dagger;</sup>, Yuxin Chen, Fuli Feng, Xueyuan Hao, Xi Su, Qi Gu, Hui Su, Xunliang Cai, Xiangnan He</div>
+      
+    <div class="links">
+      
+      <a href="https://arxiv.org/abs/2604.18240" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Arxiv</a>
+      
+      
+      <a href="https://arxiv.org/pdf/2604.18240" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+      
+      <a href="https://github.com/aj-bench/AJ-Bench" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      
+      
+      
+      <a href="./assets/files/aj_bench.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
+      
+      
+      <strong> <i style="color:var(--accent-warm)">ACL 2026 Findings</i></strong>
+      
+      
+      
+      <span class="cite-badge cite-badge-right" title="Citations"><i class="fas fa-graduation-cap"></i><span class="cite-num total_citation_mtl" data-citation="w55OAegAAAAJ:Tyk-4Ss8FVUC"></span></span>
+      
+    </div>
+  </div>
+</div>
+</li>
+
+<br />
+
+
+</ol>
+
+
+<details class="pub-more">
+<summary>Other Publications</summary>
+<ol class="bibliography">
+
+<li class="reveal">
+<div class="pub-row">
+  
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+  
+      <div class="title">
+        <a href="https://arxiv.org/pdf/2602.07594">Learning to Self-Verify Makes Language Models Better Reasoners</a>
+        
+      </div>
+      <div class="author">Yuxin Chen, <strong>Yu Wang</strong>, Yi Zhang, Ziang Ye, Zhengzhou Cai, Yaorui Shi, Qi Gu, Hui Su, Xunliang Cai, Xiang Wang, An Zhang, Tat-Seng Chua</div>
+      
+      <div class="periodical"><em>ICML 2026</em><span class="cite-badge" title="Citations"><i class="fas fa-graduation-cap"></i><span class="cite-num total_citation_mtl" data-citation="w55OAegAAAAJ:IjCSPb-OGe4C"></span></span></div>
+      
+    <div class="links">
+      
+      <a href="https://arxiv.org/abs/2602.07594" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Arxiv</a>
+      
+      
+      <a href="https://arxiv.org/pdf/2602.07594" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+      
+      <a href="https://github.com/chenyuxin1999/Learning-to-Self-Verify" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      
+      
+      
+      <a href="./assets/files/self_verify.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+<br />
+
+
+<li class="reveal">
+<div class="pub-row">
+  
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+  
+      <div class="title">
+        <a href="https://arxiv.org/pdf/2605.16143">Look Before You Leap: Autonomous Exploration for LLM Agents</a>
+        
+      </div>
+      <div class="author">Ziang Ye, Wentao Shi, Yuxin Liu, <strong>Yu Wang</strong>, Zhengzhou Cai, Yaorui Shi, Qi Gu, Xunliang Cai, Fuli Feng</div>
+      
+      <div class="periodical"><em>arXiv preprint, 2026</em><span class="cite-badge" title="Citations"><i class="fas fa-graduation-cap"></i><span class="cite-num total_citation_mtl" data-citation="w55OAegAAAAJ:Y0pCki6q_DkC"></span></span></div>
+      
+    <div class="links">
+      
+      <a href="https://arxiv.org/abs/2605.16143" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Arxiv</a>
+      
+      
+      <a href="https://arxiv.org/pdf/2605.16143" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+<br />
+
+
+<li class="reveal">
+<div class="pub-row">
+  
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+  
+      <div class="title">
+        <a href="https://arxiv.org/pdf/2605.27209">Learning to Act under Noise: Enhancing Agent Robustness via Noisy Environments</a>
+        
+      </div>
+      <div class="author">Yuxin Chen, Xiaodong Cai, Junfeng Fang, Zhuowen Han, <strong>Yu Wang</strong>, Yaorui Shi, Yi Zhang, Qi Gu, Xunliang Cai, Xiang Wang, An Zhang, Tat-Seng Chua</div>
+      
+      <div class="periodical"><em>arXiv preprint, 2026</em><span class="cite-badge" title="Citations"><i class="fas fa-graduation-cap"></i><span class="cite-num total_citation_mtl" data-citation="w55OAegAAAAJ:W7OEmFMy1HYC"></span></span></div>
+      
+    <div class="links">
+      
+      <a href="https://arxiv.org/abs/2605.27209" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Arxiv</a>
+      
+      
+      <a href="https://arxiv.org/pdf/2605.27209" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+</li>
+
+<br />
+
+
+</ol>
+</details>
+
+</div>
+
+<script>
+  $(document).ready(function () {
+      var gsDataBaseUrl = 'https://raw.githubusercontent.com/Wloner0809/Wloner0809.github.io/main/';
+      $.getJSON(gsDataBaseUrl + "google_scholar_crawler/results/gs_data.json", function (data) {
+          var citationEles = document.getElementsByClassName('total_citation_mtl');
+          Array.prototype.forEach.call(citationEles, function(element) {
+              var citationKey = element.getAttribute('data-citation');
+              if (data && data['publications'] && data['publications'][citationKey]) {
+                  var numCitations = data['publications'][citationKey]['num_citations'];
+                  element.innerHTML = numCitations || '0';
+              } else {
+                  element.innerHTML = 'N/A';
+              }
+          });
+      }).fail(function(jqXHR, textStatus, errorThrown) {
+          console.log('Failed to load citation data:', textStatus, errorThrown);
+          var citationEles = document.getElementsByClassName('total_citation_mtl');
+          Array.prototype.forEach.call(citationEles, function(element) {
+              element.innerHTML = 'N/A';
+          });
+      });
+  });
+</script>
+
 
 
             <br>
@@ -290,6 +541,7 @@ The code is written in Markdown and is intended to be used in a website or web p
         </footer>
     </div>
     <script src="/%20/assets/js/scale.fix.js"></script>
+    <script src="./assets/js/homepage-enhance.js"></script>
 </body>
 
 </html>
