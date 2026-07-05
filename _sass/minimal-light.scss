@@ -20,25 +20,34 @@
   --code: #333333;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #16181d;
-    --text: #c3c7cd;
-    --text-muted: #9198a1;
-    --heading: #8fb9ea;
-    --link: #6cb6ff;
-    --link-hover: #a8d3ff;
-    --accent: #8fb9ea;
-    --accent-warm: #ff7a90;
-    --border: #2a2f37;
-    --border-soft: #23272f;
-    --card-bg: #1d2229;
-    --avatar-border: #2a2f37;
-    --avatar-shadow: rgba(0, 0, 0, 0.5);
-    --strong: #e6e8eb;
-    --code: #c3c7cd;
-  }
+/* Dark palette, shared by the system-preference query and the manual
+   [data-theme="dark"] override. The mixin below is duplicated because CSS
+   custom properties can't be @extend-ed across selectors. */
+@mixin dark-tokens {
+  --bg: #16181d;
+  --text: #c3c7cd;
+  --text-muted: #9198a1;
+  --heading: #8fb9ea;
+  --link: #6cb6ff;
+  --link-hover: #a8d3ff;
+  --accent: #8fb9ea;
+  --accent-warm: #ff7a90;
+  --border: #2a2f37;
+  --border-soft: #23272f;
+  --card-bg: #1d2229;
+  --avatar-border: #2a2f37;
+  --avatar-shadow: rgba(0, 0, 0, 0.5);
+  --strong: #e6e8eb;
+  --code: #c3c7cd;
 }
+
+/* System preference — only when the user hasn't chosen a theme manually. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include dark-tokens; }
+}
+
+/* Manual override always wins. */
+:root[data-theme="dark"] { @include dark-tokens; }
 
 body { background-color: var(--bg); padding: 0px; font: 16.0px/1.5 Crimson Pro, serif; color: var(--text); font-weight: 400; margin: 0; -webkit-transition: background-color 0.2s ease, color 0.2s ease; transition: background-color 0.2s ease, color 0.2s ease; }
 
@@ -194,6 +203,48 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
 .site-nav a.normal { display: inline-block; font-size: 13px; letter-spacing: 0.03em; color: var(--text-muted); padding: 4px 10px; border-radius: 4px; -webkit-transition: color 0.15s ease, background-color 0.15s ease; transition: color 0.15s ease, background-color 0.15s ease; }
 
 .site-nav a.normal:hover { color: var(--link-hover); background-color: var(--card-bg); }
+
+.site-nav a.normal.active { color: var(--accent-warm); background-color: var(--card-bg); font-weight: 600; }
+
+/* ===== Sidebar meta row (total citations + theme toggle) ===== */
+.sidebar-meta { margin-top: 1.2em; display: flex; align-items: center; justify-content: center; gap: 10px; }
+
+.total-citations { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border: 1px solid var(--border); border-radius: 14px; font-size: 12px; color: var(--text-muted) !important; background: var(--card-bg); -webkit-transition: border-color 0.15s ease, color 0.15s ease; transition: border-color 0.15s ease, color 0.15s ease; }
+.total-citations:hover { color: var(--link-hover) !important; border-color: var(--link); }
+.total-citations .fa-quote-right { font-size: 10px; color: var(--accent); }
+.total-citations .tc-count { font-weight: 600; color: var(--heading); }
+
+.theme-toggle { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; padding: 0; border: 1px solid var(--border); border-radius: 50%; background: var(--card-bg); color: var(--text-muted); cursor: pointer; -webkit-transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease; transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease; }
+.theme-toggle:hover { color: var(--link-hover); border-color: var(--link); transform: scale(1.08); }
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: inline-block; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: inline-block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: inline-block; }
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
+}
+
+/* ===== #1 Scroll-reveal entrance ===== */
+.reveal { opacity: 0; transform: translateY(16px); -webkit-transition: opacity 0.55s ease, transform 0.55s ease; transition: opacity 0.55s ease, transform 0.55s ease; }
+.reveal.reveal-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ===== #9 Research interest cards ===== */
+.interest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 6px 0 20px; }
+.interest-card { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--card-bg); -webkit-transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease; transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease; }
+.interest-card:hover { transform: translateY(-2px); border-color: var(--link); box-shadow: 0 3px 12px var(--avatar-shadow); }
+.interest-card i { font-size: 1.15rem; color: var(--accent-warm); width: 1.4rem; text-align: center; flex-shrink: 0; }
+.interest-card .ic-text { font-size: 0.95rem; font-weight: 500; color: var(--strong); line-height: 1.25; }
+
+/* ===== #10 News timeline ===== */
+.news-timeline { list-style: none; padding: 0; margin: 0 0 20px; position: relative; }
+.news-timeline::before { content: ''; position: absolute; left: 6px; top: 6px; bottom: 6px; width: 2px; background: var(--border); }
+.news-timeline li { position: relative; padding: 0 0 16px 26px; }
+.news-timeline li:last-child { padding-bottom: 0; }
+.news-timeline li::before { content: ''; position: absolute; left: 0px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent-warm); box-sizing: border-box; }
 
 /* ===== Section title polish ===== */
 section h2 { position: relative; padding-bottom: 6px; }

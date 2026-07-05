@@ -4,6 +4,18 @@
 <head>
     <title>{{ site.title }}'s Homepage</title>
 
+    <!-- Apply saved theme before paint to avoid a flash of the wrong theme. -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('theme');
+                if (saved === 'dark' || saved === 'light') {
+                    document.documentElement.setAttribute('data-theme', saved);
+                }
+            } catch (e) {}
+        })();
+    </script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <meta name="description" content="{{ site.title }}">
@@ -53,20 +65,28 @@
 
     <script src="./assets/js/vanilla-back-to-top.min.js"></script>
     <script>addBackToTop({
-            backgroundColor: '#fff',
-            innerHTML: 'Back to Top',
-            textColor: '#333'
+            diameter: 46,
+            backgroundColor: 'var(--card-bg)',
+            textColor: 'var(--heading)',
+            innerHTML: '<i class="fas fa-arrow-up"></i>'
         })
     </script>
     <style>
         #back-to-top {
-            border: 1px solid #ccc;
-            border-radius: 0;
-            font-size: 15px;
-            width: 100px;
+            border: 1px solid var(--border);
+            border-radius: 50%;
+            font-size: 16px;
+            width: 46px;
+            height: 46px;
+            line-height: 46px;
             text-align: center;
-            line-height: 30px;
-            height: 30px;
+            box-shadow: 0 2px 8px var(--avatar-shadow);
+            transition: transform 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+        }
+        #back-to-top:hover {
+            transform: translateY(-3px);
+            border-color: var(--link);
+            color: var(--link-hover);
         }
     </style>
 
@@ -154,6 +174,18 @@
                 {% include navigation.md %}
             </nav>
 
+            <div class="sidebar-meta">
+                <a class="total-citations" href="{{ site.google_scholar }}" target="_blank" rel="noopener" title="Total citations on Google Scholar">
+                    <i class="fas fa-quote-right"></i>
+                    <span class="tc-label">Citations</span>
+                    <span class="tc-count" id="total-citations-count">--</span>
+                </a>
+                <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle light / dark">
+                    <i class="fas fa-moon icon-moon"></i>
+                    <i class="fas fa-sun icon-sun"></i>
+                </button>
+            </div>
+
         </header>
         <section>
 
@@ -209,6 +241,7 @@
         </footer>
     </div>
     <script src="{{ " /assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="./assets/js/homepage-enhance.js"></script>
 </body>
 
 </html>

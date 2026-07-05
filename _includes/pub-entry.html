@@ -1,0 +1,50 @@
+<li class="reveal">
+<div class="pub-row">
+  {% if include.link.image and include.link.conference_short %}
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    <img src="{{ include.link.image }}" class="teaser img-fluid z-depth-1" style="width=100;height=40%">
+    <abbr class="badge">{{ include.link.conference_short }}</abbr>
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+  {% else %}
+  <div class="col-sm-12" style="position: relative;padding-right: 15px;padding-left: 15px;">
+  {% endif %}
+      <div class="title">
+        {% if include.link.pdf %}<a href="{{ include.link.pdf }}">{{ include.link.title }}</a>{% else %}{{ include.link.title }}{% endif %}
+        {% if include.link.role == 'contributor' %}<span class="role-badge role-contrib">Contributor</span>{% endif %}
+      </div>
+      <div class="author">{{ include.link.authors }}</div>
+      {% if include.link.conference or include.inline_citation %}
+      <div class="periodical"><em>{{ include.link.conference }}</em>{% if include.inline_citation and include.link.citation %}<span class="cite-badge" title="Citations"><i class="fas fa-graduation-cap"></i><span class="cite-num total_citation_mtl" data-citation="{{ include.link.citation }}"></span></span>{% endif %}</div>
+      {% endif %}
+    <div class="links">
+      {% if include.link.arxiv %}
+      <a href="{{ include.link.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Arxiv</a>
+      {% endif %}
+      {% if include.link.pdf %}
+      <a href="{{ include.link.pdf }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      {% endif %}
+      {% if include.link.code %}
+      <a href="{{ include.link.code }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      {% endif %}
+      {% if include.link.page %}
+      <a href="{{ include.link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
+      {% endif %}
+      {% if include.link.bibtex %}
+      <a href="{{ include.link.bibtex }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a>
+      {% endif %}
+      {% if include.link.notes %}
+      <strong> <i style="color:var(--accent-warm)">{{ include.link.notes }}</i></strong>
+      {% endif %}
+      {% if include.link.others %}
+      {{ include.link.others }}
+      {% endif %}
+      {% if include.link.citation and include.inline_citation != true %}
+      <span class="cite-badge cite-badge-right" title="Citations"><i class="fas fa-graduation-cap"></i><span class="cite-num total_citation_mtl" data-citation="{{ include.link.citation }}"></span></span>
+      {% endif %}
+    </div>
+  </div>
+</div>
+</li>
+
+<br>
