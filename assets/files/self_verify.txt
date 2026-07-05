@@ -1,0 +1,6 @@
+@article{chen2026learning,
+  title={Learning to self-verify makes language models better reasoners},
+  author={Chen, Yuxin and Wang, Yu and Zhang, Yi and Ye, Ziang and Cai, Zhengzhou and Shi, Yaorui and Gu, Qi and Su, Hui and Cai, Xunliang and Wang, Xiang and others},
+  journal={arXiv preprint arXiv:2602.07594},
+  year={2026}
+}

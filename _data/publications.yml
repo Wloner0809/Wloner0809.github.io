@@ -1,8 +1,33 @@
-main:
+# Publications are split into two groups:
+#   selected — always shown (important: first-author / co-first / technical report)
+#   others   — collapsed under "Other Publications", sorted by citations desc,
+#              ties broken by Yu Wang's author position (earlier = higher)
+#
+# Per-entry fields: title, authors, role, conference_short, conference,
+#   pdf, arxiv, code, page, bibtex, image, notes, citation
+# `role` drives the coloured badge — only `contributor` is rendered.
+# Co-first authors are marked with a dagger (†) in the authors string.
+# Leave a field out (or commented) to hide its button/element.
+# Omit `conference` to skip the venue line (e.g. technical reports).
+
+selected:
+  - title: "LongCat-Flash-Thinking-2601 Technical Report"
+    authors: "Meituan LongCat Team"  # includes Yu Wang as a contributor
+    role: contributor
+    conference_short: Tech Report
+    # conference:  (technical report — no venue)
+    pdf: https://arxiv.org/pdf/2601.16725
+    arxiv: https://arxiv.org/abs/2601.16725
+    code: https://github.com/meituan-longcat/LongCat-Flash-Thinking-2601
+    bibtex: ./assets/files/longcat_flash_thinking.txt
+    # image:
+    notes: Technical Report
+    citation: w55OAegAAAAJ:WF5omc3nYNoC
+
   - title: "Examining False Positives under Inference Scaling for Mathematical Reasoning"
     authors: <strong>Yu Wang</strong>, Nan Yang, Liang Wang, Furu Wei, Fuli Feng
     conference_short: EMNLP25
-    conference: EMNLP 2025
+    # conference:  (shown via `notes` after the buttons instead)
     pdf: https://arxiv.org/pdf/2502.06217
     arxiv: https://arxiv.org/abs/2502.06217
     code: https://github.com/Wloner0809/False-Positives-in-Math
@@ -10,3 +35,42 @@ main:
     # image:
     notes: EMNLP 2025 Main
     citation: w55OAegAAAAJ:u5HHmVD_uO8C
+
+  - title: "AJ-Bench: Benchmarking Agent-as-a-Judge for Environment-Aware Evaluation"
+    authors: Wentao Shi<sup>&dagger;</sup>, <strong>Yu Wang</strong><sup>&dagger;</sup>, Yuyang Zhao<sup>&dagger;</sup>, Yuxin Chen, Fuli Feng, Xueyuan Hao, Xi Su, Qi Gu, Hui Su, Xunliang Cai, Xiangnan He
+    conference_short: ACL26
+    # conference:  (shown via `notes` after the buttons instead)
+    pdf: https://arxiv.org/pdf/2604.18240
+    arxiv: https://arxiv.org/abs/2604.18240
+    code: https://github.com/aj-bench/AJ-Bench
+    bibtex: ./assets/files/aj_bench.txt
+    # image:
+    notes: ACL 2026 Findings
+    citation: w55OAegAAAAJ:Tyk-4Ss8FVUC
+
+others:
+  - title: "Learning to Self-Verify Makes Language Models Better Reasoners"
+    authors: Yuxin Chen, <strong>Yu Wang</strong>, Yi Zhang, Ziang Ye, Zhengzhou Cai, Yaorui Shi, Qi Gu, Hui Su, Xunliang Cai, Xiang Wang, An Zhang, Tat-Seng Chua
+    conference_short: ICML26
+    conference: ICML 2026
+    pdf: https://arxiv.org/pdf/2602.07594
+    arxiv: https://arxiv.org/abs/2602.07594
+    code: https://github.com/chenyuxin1999/Learning-to-Self-Verify
+    bibtex: ./assets/files/self_verify.txt
+    citation: w55OAegAAAAJ:IjCSPb-OGe4C
+
+  - title: "Look Before You Leap: Autonomous Exploration for LLM Agents"
+    authors: Ziang Ye, Wentao Shi, Yuxin Liu, <strong>Yu Wang</strong>, Zhengzhou Cai, Yaorui Shi, Qi Gu, Xunliang Cai, Fuli Feng
+    conference: arXiv preprint, 2026
+    pdf: https://arxiv.org/pdf/2605.16143
+    arxiv: https://arxiv.org/abs/2605.16143
+    # code:
+    citation: w55OAegAAAAJ:Y0pCki6q_DkC
+
+  - title: "Learning to Act under Noise: Enhancing Agent Robustness via Noisy Environments"
+    authors: Yuxin Chen, Xiaodong Cai, Junfeng Fang, Zhuowen Han, <strong>Yu Wang</strong>, Yaorui Shi, Yi Zhang, Qi Gu, Xunliang Cai, Xiang Wang, An Zhang, Tat-Seng Chua
+    conference: arXiv preprint, 2026
+    pdf: https://arxiv.org/pdf/2605.27209
+    arxiv: https://arxiv.org/abs/2605.27209
+    # code:
+    citation: w55OAegAAAAJ:W7OEmFMy1HYC

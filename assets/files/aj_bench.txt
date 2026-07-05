@@ -1,0 +1,7 @@
+@inproceedings{shi2026aj,
+  title={AJ-Bench: Benchmarking Agent-as-a-Judge for Environment-Aware Evaluation},
+  author={Shi, Wentao and Wang, Yu and Zhao, Yuyang and Chen, Yuxin and Feng, Fuli and Hao, Xueyuan and Su, Xi and Gu, Qi and Su, Hui and Cai, Xunliang and others},
+  booktitle={Findings of the Association for Computational Linguistics: ACL 2026},
+  pages={25371--25413},
+  year={2026}
+}
