@@ -98,10 +98,6 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 .cite-badge .fa-graduation-cap { color: var(--global-theme-color); font-size: 0.68rem; }
 .cite-badge .cite-num { display: inline-block; min-width: 1.1em; padding: 0 4px; border-radius: 7px; background-color: #cfe3ff; color: #1a3a63; font-weight: 600; font-size: 0.66rem; text-align: center; }
 
-/* #3 Right-align the citation badge in the Selected links row */
-.publications ol.bibliography li .links { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; }
-.cite-badge-right { margin-left: auto; }
-
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .cite-badge .cite-num { background-color: #2c4d74; color: #cfe3ff; } }
 :root[data-theme="dark"] .cite-badge .cite-num { background-color: #2c4d74; color: #cfe3ff; }
 
