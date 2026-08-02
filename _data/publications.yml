@@ -11,6 +11,17 @@
 # Omit `conference` to skip the venue line (e.g. technical reports).
 
 selected:
+  - title: "CAST: Game Solvers as Turn-Level Teachers for LLM Agents"
+    authors: <strong>Yu Wang</strong>, Yi-Kai Zhang, Wentao Shi, Ziang Ye, Yuchun Miao, Yueqing Sun, Qi Gu, Xunliang Cai, Lan-Zhe Guo, Han-Jia Ye, et al.
+    conference_short: arXiv
+    conference: arXiv preprint, 2026
+    pdf: https://arxiv.org/pdf/2607.25308
+    arxiv: https://arxiv.org/abs/2607.25308
+    code: https://github.com/Wloner0809/CAST
+    bibtex: ./assets/files/cast.txt
+    # image:
+    # citation:  (not yet indexed by Google Scholar — add the pub id once it appears)
+
   - title: "LongCat-Flash-Thinking-2601 Technical Report"
     authors: "Meituan LongCat Team"  # includes Yu Wang as a contributor
     role: contributor

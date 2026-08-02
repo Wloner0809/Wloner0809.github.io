@@ -1,0 +1,6 @@
+@article{wang2026cast,
+  title={CAST: Game Solvers as Turn-Level Teachers for LLM Agents},
+  author={Wang, Yu and Zhang, Yi-Kai and Shi, Wentao and Ye, Ziang and Miao, Yuchun and Sun, Yueqing and Gu, Qi and Cai, Xunliang and Guo, Lan-Zhe and Ye, Han-Jia and others},
+  journal={arXiv preprint arXiv:2607.25308},
+  year={2026}
+}
