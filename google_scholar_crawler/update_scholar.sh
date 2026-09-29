@@ -11,7 +11,7 @@
 #   - git        -> same rule
 #
 # Usage:
-#   ./update_scholar.sh              # direct connection (default)
+#   ./update_scholar.sh              # use inherited/local proxy when available
 #   USE_PROXY=1 ./update_scholar.sh  # route through a local proxy (see PROXY_URL)
 
 set -euo pipefail
@@ -26,7 +26,7 @@ REPO_DIR="$(cd "${CRAWLER_DIR}/.." && pwd)"
 RESULTS_DIR="${CRAWLER_DIR}/results"
 
 export GOOGLE_SCHOLAR_ID="${GOOGLE_SCHOLAR_ID:-w55OAegAAAAJ}"
-PROXY_URL="${PROXY_URL:-http://127.0.0.1:7890}"
+PROXY_URL="${PROXY_URL:-http://127.0.0.1:10808}"
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*"; }
 
@@ -67,7 +67,27 @@ GIT="$(find_binary git \
 }
 
 # --- Optional proxy -----------------------------------------------------
+# Interactive shells usually export HTTPS_PROXY, but launchd starts jobs with
+# a minimal environment. Detect the common local proxy ports there as well;
+# this keeps the scheduled job usable when direct DNS access to Google is
+# unavailable, while still allowing a direct connection on other machines.
+if [ "${USE_PROXY:-0}" != "1" ] && [ -z "${HTTPS_PROXY:-${https_proxy:-}}" ]; then
+  for port in 10808 7890; do
+    if nc -z -G 1 127.0.0.1 "${port}" >/dev/null 2>&1; then
+      PROXY_URL="http://127.0.0.1:${port}"
+      USE_PROXY=1
+      log "Detected local proxy on ${PROXY_URL}"
+      break
+    fi
+  done
+fi
+
 if [ "${USE_PROXY:-0}" = "1" ]; then
+  log "Routing through proxy ${PROXY_URL}"
+  export HTTP_PROXY="${PROXY_URL}" HTTPS_PROXY="${PROXY_URL}"
+  export http_proxy="${PROXY_URL}" https_proxy="${PROXY_URL}"
+elif [ -n "${HTTPS_PROXY:-${https_proxy:-}}" ]; then
+  PROXY_URL="${HTTPS_PROXY:-${https_proxy}}"
   log "Routing through proxy ${PROXY_URL}"
   export HTTP_PROXY="${PROXY_URL}" HTTPS_PROXY="${PROXY_URL}"
   export http_proxy="${PROXY_URL}" https_proxy="${PROXY_URL}"
