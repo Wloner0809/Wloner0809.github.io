@@ -38,8 +38,11 @@ nothing is hardcoded to one machine.
 ./google_scholar_crawler/update_scholar.sh
 ```
 
-Add `USE_PROXY=1` to route through a local proxy (defaults to
-`http://127.0.0.1:7890`, override with `PROXY_URL`).
+The updater uses an inherited `HTTPS_PROXY` when one is present. In a launchd
+job, where that environment is not inherited, it automatically detects a
+local proxy on ports 10808 or 7890. To select a proxy explicitly, set
+`USE_PROXY=1` and override `PROXY_URL` (the default is
+`http://127.0.0.1:10808`).
 
 ## Setting it up on a new machine
 
